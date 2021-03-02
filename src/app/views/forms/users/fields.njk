@@ -1,0 +1,51 @@
+<div class="items">
+  <div class="item">
+    <div class="form-title">Nome completo</div>
+    <div>
+      <input type="text" name="name" value={{customer.name}} >
+    </div>
+  </div>
+  <div class="item">
+    <div class="form-title">CPF</div>
+    <div>
+      <input type="text" onkeydown="Mask.apply(this, 'formatCodePerson')" name="code_person" maxlength="14" placeholder="***.***.***-**" value={{customer.code_person}} >
+    </div>
+  </div>
+  <div class="item">
+    <div class="form-title">Data de Nascimento</div>
+    <input type="date" name="birth_date" value={{customer.birth_date}}>
+  </div>
+  <div class="item">
+    <div class="form-title">E-mail</div>
+    <input type="email" name="email" value={{customer.email}}>
+  </div>
+  <div class="item">
+    <div class="form-title">Cep</div>
+    <input type="text" onkeydown="Mask.apply(this, 'formatZipCode')" name="zip_code" placeholder="*****-***" value={{address.zip_code}}>
+  </div>
+  <div class="item">
+    <div class="form-title">Rua</div>
+    <input type="text" name="street"  value={{address.street}} >
+  </div>
+  <div class="item">
+    <div class="form-title">Número / Apto</div>
+    <input type="text" name="number" value={{address.number}}>
+  </div>
+  <div class="item">
+    <div class="form-title">Complemento</div>
+    <input type="text" name="complement" value={{address.complement}}>
+  </div>
+  <div class="item">
+    <div class="form-title">Bairro</div>
+    <input type="text" name="district" value={{address.district}}>
+  </div>
+  <div class="item">
+    <div class="form-title">Cidade</div>
+    <input type="text" name="city" value={{address.city}}>
+  </div>
+  <div class="item">
+    <div class="form-title">Estado</div>
+    <input type="text" name="region" value={{address.region}}>
+  </div>
+  
+</div>

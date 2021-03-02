@@ -2,8 +2,9 @@ CREATE TABLE "customers" (
   "id" SERIAL PRIMARY KEY,
   "name" text NOT NULL,
   "code_person" text UNIQUE,
-  "gender" text,
+  "email" text,
   "order_id" text,
+  "birth_date" timestamp,
   "addresses_id" text
 );
 
@@ -13,7 +14,8 @@ CREATE TABLE "addresses" (
   "number" text,
   "district" text,
   "city" text,
-  "region" text
+  "region" text,
+  "zip_code" text NOT NULL
 );
 
 CREATE TABLE "agencies" (

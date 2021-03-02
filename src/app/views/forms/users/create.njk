@@ -1,0 +1,15 @@
+{% extends 'layout.njk' %}
+
+{% block content %}
+  <section class="container form">
+    <form action="/users" method="post">
+      <div class="header">
+        <h1>Cadastro de usuário:</h1>
+        <button type="submit" class="button">Cadastrar</button>
+      </div>
+      <div class="fields">
+        {% include './fields.njk' %}
+      </div>
+    </form>
+  </section>
+{% endblock  %}
